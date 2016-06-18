@@ -1,0 +1,76 @@
+// padding
+.sidebar-p-a {
+	padding: $sidebar-spacing-y $sidebar-spacing-x;
+}
+.sidebar-p-x {
+	padding-left: $sidebar-spacing-x;
+	padding-right: $sidebar-spacing-x;
+}
+.sidebar-p-y {
+	padding-top: $sidebar-spacing-y;
+	padding-bottom: $sidebar-spacing-y;
+}
+.sidebar-p-t {
+	padding-top: $sidebar-spacing-y;
+}
+.sidebar-p-b {
+	padding-bottom: $sidebar-spacing-y;
+}
+.sidebar-p-l {
+	padding-left: $sidebar-spacing-x;
+	padding-right: $sidebar-spacing-x;
+}
+.sidebar-p-r {
+	padding-right: $sidebar-spacing-x;
+}
+
+// margin
+.sidebar-m-a {
+	margin: $sidebar-spacing-y $sidebar-spacing-x;
+}
+.sidebar-m-x {
+	margin-left: $sidebar-spacing-x;
+	margin-right: $sidebar-spacing-x;
+}
+.sidebar-m-y {
+	margin-top: $sidebar-spacing-y;
+	margin-bottom: $sidebar-spacing-y;
+}
+.sidebar-m-t {
+	margin-top: $sidebar-spacing-y;
+}
+.sidebar-m-b {
+	margin-bottom: $sidebar-spacing-y;
+}
+.sidebar-m-l {
+	margin-left: $sidebar-spacing-x;
+}
+.sidebar-m-r {
+	margin-right: $sidebar-spacing-x;
+}
+
+// Borders
+.sidebar-b-a {
+	border: 1px solid transparent;
+}
+.sidebar-b-x {
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+.sidebar-b-y {
+	border-top: 1px solid transparent;
+	border-bottom: 1px solid transparent;
+}
+.sidebar-b-t {
+	border-top: 1px solid transparent;
+}
+.sidebar-b-b {
+	border-bottom: 1px solid transparent;
+}
+
+// Generic sidebar element
+.sidebar-block {
+	padding-left: $sidebar-spacing-x;
+	padding-right: $sidebar-spacing-x;
+	margin-bottom: $sidebar-spacing-y;
+}

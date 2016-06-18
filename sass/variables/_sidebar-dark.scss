@@ -1,0 +1,87 @@
+//////////////////
+// SIDEBAR DARK //
+//////////////////
+
+$sidebar-dark-bg:                           transparent !default;
+$sidebar-dark-text-color:                   rgba(255, 255, 255, .54) !default;
+$sidebar-dark-link-color:                   #fff !default;
+
+// borders
+$sidebar-dark-container-border-color:       transparent !default;
+$sidebar-dark-container-border-width:       0 !default;
+$sidebar-dark-border-color:                 rgba(0, 0, 0, .15) !default;
+
+// brand
+$sidebar-dark-brand-color:                  #ffffff !default;
+$sidebar-dark-brand-bg:                     rgba(0, 0, 0, .12) !default;
+$sidebar-dark-brand-border-color:           $sidebar-dark-border-color !default;
+
+// label
+$sidebar-dark-label-bg:                     rgba(0, 0, 0, .3) !default;
+$sidebar-dark-label-color:                  #ffffff !default;
+
+// heading
+$sidebar-dark-heading-color:                $sidebar-dark-text-color !default;
+
+// list group menu
+$sidebar-dark-list-group-menu-item-bg:     rgba(0, 0, 0, .08) !default;
+$sidebar-dark-list-group-menu-item-border-color: rgba(0, 0, 0, .12) !default;
+
+// menu item
+$sm-dark-item-border-color:                 $sidebar-dark-border-color !default;
+
+// menu button
+$sm-dark-button-color:                      $sidebar-dark-link-color !default;
+
+// icons
+$sm-dark-icon-color:                        rgba(255, 255, 255, .54) !default;
+$sm-dark-icon-bg:                           rgba(0, 0, 0, .12) !default;
+
+// hover menu button
+$sm-dark-hover-button-color:                $sm-dark-button-color !default;
+$sm-dark-hover-button-bg:                   rgba(255, 255, 255, .12) !default;
+
+// hover menu icon
+$sm-dark-hover-icon-color:                  $sm-dark-icon-color !default;
+
+// open
+$sm-dark-open-bg:                           rgba(0, 0, 0, .04) !default;
+
+// open menu button
+$sm-dark-open-button-color:                 $sidebar-dark-text-color !default;
+$sm-dark-open-button-bg:                    transparent !default;
+
+// open menu icon
+$sm-dark-open-icon-color:                   $sm-dark-open-button-color !default;
+$sm-dark-open-icon-bg:                      $sm-dark-icon-bg !default;
+
+// active menu button
+$sm-dark-active-button-bg:                  rgba(255, 255, 255, .12) !default;
+$sm-dark-active-button-color:               $sm-dark-button-color !default;
+$sm-dark-active-icon-color:                 $sm-dark-active-button-color !default;
+
+// menu icon with sm-icons-block
+$sm-dark-iconsblock-icon-color:             $sm-dark-icon-color !default;
+
+// active menu button with sm-active-button-bg
+$sm-dark-activebuttonbg-button-color:       #fff !default;
+$sm-dark-activebuttonbg-icon-color:         $sm-dark-activebuttonbg-button-color !default;
+
+// active menu button with sm-icons-block
+$sm-dark-active-iconsblock-icon-bg:         $sm-dark-active-button-bg;
+
+// active menu button with sm-icons-block AND sm-active-button-bg
+$sm-dark-active-iconsblock-activebuttonbg-icon-bg: $sm-dark-active-iconsblock-icon-bg !default;
+
+// menu toggle button indicator
+$sm-dark-toggle-color:                      $sm-dark-button-color !default;
+$sm-dark-open-toggle-color:                 $sm-dark-open-button-color !default;
+
+// submenu item
+$ssm-dark-item-border-color:                $sm-dark-item-border-color !default;
+
+// submenu button
+$ssm-dark-button-color:                     $sidebar-dark-text-color !default;
+
+// submenu icon
+$ssm-dark-icon-color:                       $ssm-dark-button-color !default;

@@ -1,0 +1,13 @@
+.sidebar-heading { 
+	font-weight: $sidebar-heading-font-weight;
+	font-size: $sidebar-heading-font-size;
+	font-family: $sidebar-heading-font-family;
+	text-transform: $sidebar-heading-text-transform;
+	letter-spacing: $sidebar-heading-letter-spacing;
+	line-height: $sidebar-heading-line-height;
+}
+.sidebar > .sidebar-heading {
+	padding-left: $sidebar-spacing-x;
+	padding-right: $sidebar-spacing-x;
+	margin-bottom: $sidebar-spacing-y;
+}

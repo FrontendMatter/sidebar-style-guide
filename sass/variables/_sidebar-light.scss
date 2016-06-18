@@ -1,0 +1,87 @@
+///////////////////
+// SIDEBAR LIGHT //
+///////////////////
+
+$sidebar-light-bg:                           #ffffff !default;
+$sidebar-light-text-color:                   rgba(0, 0, 0, .54) !default;
+$sidebar-light-link-color:                   inherit !default;
+
+// borders
+$sidebar-light-container-border-color:       #e5e5e5 !default;
+$sidebar-light-container-border-width:       1px !default;
+$sidebar-light-border-color:                 #e5e5e5 !default;
+
+// brand
+$sidebar-light-brand-color:                  $brand-primary !default;
+$sidebar-light-brand-bg:                     rgba(0, 0, 0, .07) !default;
+$sidebar-light-brand-border-color:           $sidebar-light-border-color !default;
+
+// label
+$sidebar-light-label-bg:                     rgba(0, 0, 0, .3) !default;
+$sidebar-light-label-color:                  #ffffff !default;
+
+// heading
+$sidebar-light-heading-color:                $sidebar-light-text-color !default;
+
+// list group menu
+$sidebar-light-list-group-menu-item-bg:     rgba(0, 0, 0, .08) !default;
+$sidebar-light-list-group-menu-item-border-color: rgba(0, 0, 0, .12) !default;
+
+// menu item
+$sm-light-item-border-color:                 $sidebar-light-border-color !default;
+
+// menu button
+$sm-light-button-color:                      $sidebar-light-link-color !default;
+
+// icons
+$sm-light-icon-color:                        $sm-light-button-color !default;
+$sm-light-icon-bg:                           rgba(0, 0, 0, .12) !default;
+
+// hover menu button
+$sm-light-hover-button-color:                #212121 !default;
+$sm-light-hover-button-bg:                   rgba(0, 0, 0, .03) !default;
+
+// hover menu icon
+$sm-light-hover-icon-color:                  $sm-light-icon-color !default;
+
+// open
+$sm-light-open-bg:                           rgba(0, 0, 0, .04) !default;
+
+// open menu button
+$sm-light-open-button-color:                 $sidebar-light-text-color !default;
+$sm-light-open-button-bg:                    transparent !default;
+
+// open menu icon
+$sm-light-open-icon-color:                   $sm-light-open-button-color !default;
+$sm-light-open-icon-bg:                      $sm-light-icon-bg !default;
+
+// active menu button
+$sm-light-active-button-bg:                  $brand-primary !default;
+$sm-light-active-button-color:               $brand-primary !default;
+$sm-light-active-icon-color:                 $sm-light-active-button-color !default;
+
+// menu icon with sm-icons-block
+$sm-light-iconsblock-icon-color:             $sm-light-icon-color !default;
+
+// active menu button with sm-active-button-bg
+$sm-light-activebuttonbg-button-color:       #fff !default;
+$sm-light-activebuttonbg-icon-color:         $sm-light-activebuttonbg-button-color !default;
+
+// active menu button with sm-icons-block
+$sm-light-active-iconsblock-icon-bg:         $sm-light-active-button-bg;
+
+// active menu button with sm-icons-block AND sm-active-button-bg
+$sm-light-active-iconsblock-activebuttonbg-icon-bg: $sm-light-active-iconsblock-icon-bg !default;
+
+// menu toggle button indicator
+$sm-light-toggle-color:                      rgba(0, 0, 0, .24) !default;
+$sm-light-open-toggle-color:                 $sm-light-open-button-color !default;
+
+// submenu item
+$ssm-light-item-border-color:                $sm-light-item-border-color !default;
+
+// submenu button
+$ssm-light-button-color:                     $sidebar-light-text-color !default;
+
+// submenu icon
+$ssm-light-icon-color:                       $ssm-light-button-color !default;

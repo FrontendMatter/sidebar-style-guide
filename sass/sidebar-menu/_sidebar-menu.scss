@@ -1,0 +1,78 @@
+.sidebar-menu {
+	margin-bottom: $sm-spacing-y;
+	padding-left: 0;
+	padding-right: 0;
+	list-style: none;
+}
+.sidebar-menu-item {
+	position: relative;
+	overflow: hidden;
+}
+.sidebar-menu-button {
+	display: flex;
+	align-items: center;
+	font-weight: $sm-button-font-weight;
+	line-height: $sm-button-height;
+	padding-left: $sm-spacing-x;
+	font-size: $sm-button-font-size;
+	&, &:hover, &:focus {
+		text-decoration: none;
+	}
+}
+.active > .sidebar-menu-button {
+	font-weight: $sm-active-button-font-weight;
+}
+.sidebar-menu-button:not(:only-child):before {
+	font-family: $sm-toggle-family;
+	content: $sm-toggle-icon;
+	position: absolute;
+	right: $sm-spacing-x;
+	display: block;
+	font-size: $sm-toggle-font-size;
+}
+.open > .sidebar-menu-button:not(:only-child):before {
+	content: $sm-open-toggle-icon;
+}
+.sidebar-menu-icon {
+	vertical-align: middle;
+	width: $sm-icon-width;
+	font-size: $sm-icon-font-size;
+	display: inline-block;
+	line-height: normal;
+	position: relative;
+	&.material-icons {
+		top: -1px;
+	}
+}
+.sidebar-menu-label {
+	position: absolute;
+	right: $sm-spacing-x;
+	margin-top: floor(($sm-button-height - $sm-label-height) / 2);
+	padding: $sm-label-spacing-vertical $sm-label-spacing-horizontal;
+	font-size: $sm-label-font-size;
+}
+.sidebar-menu-button:not(:only-child) .sidebar-menu-label {
+	right: $sm-spacing-x + $sm-icon-font-size;
+}
+
+// submenus
+.sidebar-submenu {
+	display: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	.open > & {
+		display: block;
+	}
+	.sidebar-menu-button {
+		line-height: $ssm-button-height;
+		font-size: $ssm-button-font-size;
+	}
+	.sidebar-menu-icon {
+		top:-1px;
+		position: relative;
+		font-size: $ssm-icon-font-size;
+		width: $ssm-icon-font-size + ($ssm-icon-font-size / 2);
+	}
+}
