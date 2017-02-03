@@ -40,9 +40,6 @@
 	display: inline-block;
 	line-height: normal;
 	position: relative;
-	&.material-icons {
-		top: -1px;
-	}
 }
 .sidebar-menu-label {
 	position: absolute;
@@ -70,7 +67,6 @@
 		font-size: $ssm-button-font-size;
 	}
 	.sidebar-menu-icon {
-		top:-1px;
 		position: relative;
 		font-size: $ssm-icon-font-size;
 		width: $ssm-icon-font-size + ($ssm-icon-font-size / 2);

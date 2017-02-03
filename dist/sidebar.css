@@ -83,11 +83,15 @@
   font-weight: 500;
   font-size: 1.3rem;
   margin-bottom: 9.375px;
-  display: inline-block; }
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center; }
   .sidebar-brand:hover {
     text-decoration: none; }
-  .sidebar-brand i.material-icons {
-    margin-top: -3px; }
+
+.sidebar-brand-icon {
+  margin-right: 9.375px; }
 
 .sidebar-brand-header {
   height: 56px;
@@ -95,7 +99,6 @@
   padding-left: 18.75px;
   padding-right: 18.75px;
   margin-bottom: 18.75px;
-  display: block;
   width: 100%; }
 
 .sidebar-brand-border {
@@ -341,8 +344,6 @@
   display: inline-block;
   line-height: normal;
   position: relative; }
-  .sidebar-menu-icon.material-icons {
-    top: -1px; }
 
 .sidebar-menu-label {
   position: absolute;
@@ -365,7 +366,6 @@
     line-height: 42px;
     font-size: 15px; }
   .sidebar-submenu .sidebar-menu-icon {
-    top: -1px;
     position: relative;
     font-size: 24px;
     width: 36px; }

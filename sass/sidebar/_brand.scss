@@ -3,13 +3,14 @@
 	font-weight: $sidebar-brand-weight;
 	font-size: $sidebar-brand-size;
 	margin-bottom: $sidebar-spacing-y/2;
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	&:hover {
 		text-decoration: none;
 	}
-	i.material-icons {
-		margin-top: -3px;
-	}
+}
+.sidebar-brand-icon {
+	margin-right: $sidebar-spacing-x/2;
 }
 .sidebar-brand-header {
 	height: $sidebar-brand-height;
@@ -17,7 +18,6 @@
 	padding-left: $sidebar-spacing-x;
 	padding-right: $sidebar-spacing-x;
 	margin-bottom: $sidebar-spacing-y;
-	display: block;
 	width: 100%;
 }
 .sidebar-brand-border {
