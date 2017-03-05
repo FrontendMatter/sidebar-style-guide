@@ -1,6 +1,6 @@
 {
   "name": "sidebar-style-guide",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Sidebar navigation style guide (CSS and Sass)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

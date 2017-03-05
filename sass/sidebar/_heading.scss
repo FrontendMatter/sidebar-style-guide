@@ -5,9 +5,7 @@
 	text-transform: $sidebar-heading-text-transform;
 	letter-spacing: $sidebar-heading-letter-spacing;
 	line-height: $sidebar-heading-line-height;
-}
-.sidebar > .sidebar-heading {
-	padding-left: $sidebar-spacing-x;
-	padding-right: $sidebar-spacing-x;
-	margin-bottom: $sidebar-spacing-y;
+  padding-left: $sidebar-spacing-x;
+  padding-right: $sidebar-spacing-x;
+  margin-bottom: $sidebar-spacing-y;
 }

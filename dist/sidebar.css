@@ -110,9 +110,7 @@
   font-family: inherit;
   text-transform: uppercase;
   letter-spacing: normal;
-  line-height: normal; }
-
-.sidebar > .sidebar-heading {
+  line-height: normal;
   padding-left: 18.75px;
   padding-right: 18.75px;
   margin-bottom: 18.75px; }
