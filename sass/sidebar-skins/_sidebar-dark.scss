@@ -54,12 +54,6 @@
 		border-color: $sidebar-dark-brand-border-color;
 	}
 
-	// label
-	.sidebar-label {
-		color: $brand-primary;
-		background: #ffffff;
-	}
-
 	//////////
 	// menu //
 	//////////
@@ -73,14 +67,13 @@
 	.sidebar-menu-icon {
 		color: $sm-dark-icon-color;
 	}
-	.sidebar-menu-label {
-		background: $sidebar-dark-label-bg;
-		color: $sidebar-dark-label-color;
-	}
 	.sidebar-menu-button:hover {
 		color: $sm-dark-hover-button-color;
 		background: $sm-dark-hover-button-bg;
 		.sidebar-menu-icon {
+			color: $sm-dark-hover-icon-color;
+		}
+		&:not(:only-child):before {
 			color: $sm-dark-hover-icon-color;
 		}
 	}

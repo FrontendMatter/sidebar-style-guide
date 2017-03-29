@@ -41,14 +41,14 @@
 	line-height: normal;
 	position: relative;
 }
-.sidebar-menu-label {
+.sidebar-menu-badge {
 	position: absolute;
 	right: $sm-spacing-x;
 	margin-top: floor(($sm-button-height - $sm-label-height) / 2);
 	padding: $sm-label-spacing-vertical $sm-label-spacing-horizontal;
 	font-size: $sm-label-font-size;
 }
-.sidebar-menu-button:not(:only-child) .sidebar-menu-label {
+.sidebar-menu-button:not(:only-child) .sidebar-menu-badge {
 	right: $sm-spacing-x + $sm-icon-font-size;
 }
 
