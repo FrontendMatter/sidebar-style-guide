@@ -5,6 +5,7 @@
 $sidebar-dark-bg:                           transparent !default;
 $sidebar-dark-text-color:                   rgba(255, 255, 255, .54) !default;
 $sidebar-dark-link-color:                   #fff !default;
+$sidebar-dark-hover-link-color:             #fff !default;
 
 // borders
 $sidebar-dark-container-border-color:       transparent !default;
@@ -85,3 +86,11 @@ $ssm-dark-button-color:                     $sidebar-dark-text-color !default;
 
 // submenu icon
 $ssm-dark-icon-color:                       $ssm-dark-button-color !default;
+
+// submenu active
+$ssm-dark-active-button-color:              $sm-dark-active-button-color !default;
+$ssm-dark-active-icon-color:                $ssm-dark-active-button-color !default;
+
+// hover submenu
+$ssm-dark-hover-button-color:               $sm-dark-hover-button-color !default;
+$ssm-dark-hover-icon-color:                 $ssm-dark-hover-button-color !default;

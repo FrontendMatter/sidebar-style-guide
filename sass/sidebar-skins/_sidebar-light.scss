@@ -77,19 +77,8 @@
 		.sidebar-menu-icon {
 			color: $sm-light-hover-icon-color;
 		}
-	}
-	.sidebar-submenu {
-		.sidebar-menu-button {
-			color: $ssm-light-button-color;
-		}
-		.sidebar-menu-icon {
-			color: $ssm-light-icon-color;
-		}
-	}
-	.active > .sidebar-menu-button {
-		color: $sm-light-active-button-color;
-		.sidebar-menu-icon {
-			color: $sm-light-active-icon-color;
+		&:not(:only-child):before {
+			color: $sm-light-hover-icon-color;
 		}
 	}
 	.open {
@@ -103,6 +92,32 @@
 		color: $sm-light-open-button-color;
 		.sidebar-menu-icon {
 			color: $sm-light-open-icon-color;
+		}
+	}
+	.active > .sidebar-menu-button {
+		color: $sm-light-active-button-color;
+		.sidebar-menu-icon {
+			color: $sm-light-active-icon-color;
+		}
+	}
+	.sidebar-submenu {
+		.sidebar-menu-button {
+			color: $ssm-light-button-color;
+		}
+		.sidebar-menu-icon {
+			color: $ssm-light-icon-color;
+		}
+		.sidebar-menu-button:hover {
+			color: $ssm-light-hover-button-color;
+			.sidebar-menu-icon {
+				color: $ssm-light-hover-icon-color;
+			}
+		}
+		.active > .sidebar-menu-button {
+			color: $ssm-light-active-button-color;
+			.sidebar-menu-icon {
+				color: $ssm-light-active-icon-color;
+			}
 		}
 	}
 

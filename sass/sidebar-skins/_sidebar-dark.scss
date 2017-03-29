@@ -77,20 +77,6 @@
 			color: $sm-dark-hover-icon-color;
 		}
 	}
-	.sidebar-submenu {
-		.sidebar-menu-button {
-			color: $ssm-dark-button-color;
-		}
-		.sidebar-menu-icon {
-			color: $ssm-dark-icon-color;
-		}
-	}
-	.active > .sidebar-menu-button {
-		color: $sm-dark-active-button-color;
-		.sidebar-menu-icon {
-			color: $sm-dark-active-icon-color;
-		}
-	}
 	.open {
 		background: $sm-dark-open-bg;
 	}
@@ -102,6 +88,32 @@
 		color: $sm-dark-open-button-color;
 		.sidebar-menu-icon {
 			color: $sm-dark-open-icon-color;
+		}
+	}
+	.active > .sidebar-menu-button {
+		color: $sm-dark-active-button-color;
+		.sidebar-menu-icon {
+			color: $sm-dark-active-icon-color;
+		}
+	}
+	.sidebar-submenu {
+		.sidebar-menu-button {
+			color: $ssm-dark-button-color;
+		}
+		.sidebar-menu-icon {
+			color: $ssm-dark-icon-color;
+		}
+		.sidebar-menu-button:hover {
+			color: $ssm-dark-hover-button-color;
+			.sidebar-menu-icon {
+				color: $ssm-dark-hover-icon-color;
+			}
+		}
+		.active > .sidebar-menu-button {
+			color: $ssm-dark-active-button-color;
+			.sidebar-menu-icon {
+				color: $ssm-dark-active-icon-color;
+			}
 		}
 	}
 

@@ -5,6 +5,7 @@
 $sidebar-light-bg:                           #ffffff !default;
 $sidebar-light-text-color:                   rgba(0, 0, 0, .54) !default;
 $sidebar-light-link-color:                   inherit !default;
+$sidebar-light-hover-link-color:             #212121 !default;
 
 // borders
 $sidebar-light-container-border-color:       #e5e5e5 !default;
@@ -85,3 +86,11 @@ $ssm-light-button-color:                     $sidebar-light-text-color !default;
 
 // submenu icon
 $ssm-light-icon-color:                       $ssm-light-button-color !default;
+
+// submenu active
+$ssm-light-active-button-color:              $sm-light-active-button-color !default;
+$ssm-light-active-icon-color:                $ssm-light-active-button-color !default;
+
+// hover submenu
+$ssm-light-hover-button-color:               $sm-light-hover-button-color !default;
+$ssm-light-hover-icon-color:                 $ssm-light-hover-button-color !default;
