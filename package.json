@@ -1,31 +1,25 @@
 {
   "name": "sidebar-style-guide",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "Sidebar navigation style guide (CSS and Sass)",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
-  "author": "MOSAICPRO <contact@mosaicpro.biz> (http://themeforest.net/user/mosaicpro/portfolio)",
+  "author": "FrontendMatter <contact@frontendmatter.com> (http://www.frontendmatter.com)",
   "license": "ISC",
   "devDependencies": {
-    "autoprefixer": "^6.3.3",
-    "gulp": "^3.9.1",
-    "gulp-clean-css": "^2.0.7",
-    "gulp-if": "^2.0.1",
-    "gulp-load-plugins": "^1.2.2",
-    "gulp-postcss": "^6.1.1",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.3.1",
-    "sass-importer-npm": "^1.0.0",
-    "sass-strip-unit": "^1.0.0"
+    "cross-env": "^5.1.1",
+    "laravel-mix": "^1.5.1"
   },
   "dependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/themekit/sidebar-style-guide.git"
+    "url": "git+https://github.com/FrontendMatter/sidebar-style-guide.git"
   },
   "bugs": {
-    "url": "https://github.com/themekit/sidebar-style-guide/issues"
+    "url": "https://github.com/FrontendMatter/sidebar-style-guide/issues"
   },
-  "homepage": "https://github.com/themekit/sidebar-style-guide#readme"
+  "homepage": "https://github.com/FrontendMatter/sidebar-style-guide#readme"
 }

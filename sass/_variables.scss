@@ -1,15 +1,9 @@
-///////////
-// UTILS //
-///////////
-
-@import 'sass-strip-unit/strip-unit';
-
 /////////////////////
 // SIDEBAR GENERAL //
 /////////////////////
 
 $sidebar-font-size:                 15px !default;
-$brand-primary:                     #0275d8 !default;
+$primary:                           #0275d8 !default;
 
 // general spacing
 $sidebar-spacing:                   $sidebar-font-size * 1.25 !default;
@@ -30,26 +24,26 @@ $sidebar-heading-letter-spacing:    normal !default;
 $sidebar-heading-line-height:       normal !default;
 
 // menu spacing
-$sm-spacing-x:                      $sidebar-spacing-x !default;
+$sm-spacing-x:                      0 !default;
 $sm-spacing-y:                      $sidebar-spacing-y !default;
 
 // horizontal spacing between elements such as 
-// .sidebar-menu-label and .sidebar-menu-icon 
+// .sidebar-menu-badge and .sidebar-menu-icon 
 // within a menu button
-$sm-element-spacing-x:               5px !default;
+$sm-inner-spacing-x:                5px !default;
 
 // menu buttons
 $sm-button-font-size:               $sidebar-font-size !default;
 $sm-button-font-weight:             400 !default;
 $sm-button-height:                  42px !default;
+$sm-button-spacing-x:               $sidebar-spacing-x !default;
 
 // menu condensed buttons
-$sm-condensed-button-height:        $sm-button-height - ($sm-button-height/4) !default;
+$sm-condensed-button-height:        $sm-button-height * 0.75 !default;
 
 // menu icons
 $sm-icon-font-size:                 24px !default;
-$sm-icon-margin:                    $sm-spacing-x * 0.4 !default;
-$sm-icon-width:                     $sm-icon-font-size + $sm-icon-margin !default;
+$sm-icon-spacing-x:                 $sm-inner-spacing-x !default;
 
 // menu icons using .sm-icons-block
 $sm-iconsblock-spacing:             $sm-icon-font-size * 0.25 !default;
@@ -63,7 +57,7 @@ $ssm-button-height:                 $sm-button-height !default;
 $ssm-button-font-size:              $sm-button-font-size !default;
 
 // submenu condensed buttons
-$ssm-condensed-button-height:       $ssm-button-height - ($ssm-button-height/4) !default;
+$ssm-condensed-button-height:       $ssm-button-height * 0.75 !default;
 
 // submenu icons
 $ssm-icon-font-size:                $sm-icon-font-size !default;
@@ -74,11 +68,6 @@ $ssm-iconsblock-width:              $ssm-icon-font-size + $ssm-iconsblock-spacin
 
 // menu toggle button indicator
 $sm-toggle-font-size:               $sm-button-font-size !default;
-// $sm-toggle-family:                  "FontAwesome" !default;
-// $sm-toggle-icon:                    "\f067" !default; // plus
-// $sm-open-toggle-icon:               "\f068" !default; // minus
-// $sm-toggle-icon:                    "\f078" !default; // chevron-down
-// $sm-open-toggle-icon:               "\f077" !default; // chevron-up
 
 // See Material Icons:
 // - https://design.google.com/icons/
@@ -88,20 +77,18 @@ $sm-toggle-icon:                    "\e5db" !default;
 $sm-open-toggle-icon:               "\e5d8" !default;
 
 // label
-$sm-label-spacing-horizontal:       .3rem !default;
-$sm-label-spacing-vertical:         .2rem !default;
-$sm-label-font-size:                .75rem !default;
-$sm-label-width:                    (strip-unit($sm-label-font-size) * $sidebar-font-size) + (strip-unit($sm-label-spacing-horizontal) * $sidebar-font-size);
-$sm-label-height:                   (strip-unit($sm-label-font-size) * $sidebar-font-size) + (strip-unit($sm-label-spacing-vertical) * $sidebar-font-size);
+$sm-badge-spacing-x:                .3rem !default;
+$sm-badge-spacing-y:                .2rem !default;
+$sm-badge-font-size:                .75rem !default;
 
 //////////////////
 // SIDEBAR DARK //
 //////////////////
 
-@import 'variables/sidebar-dark';
+@import './variables/sidebar-dark';
 
 ///////////////////
 // SIDEBAR LIGHT //
 ///////////////////
 
-@import 'variables/sidebar-light';
+@import './variables/sidebar-light';

@@ -61,7 +61,7 @@
 	.sidebar-menu-button {
 		color: $sm-dark-button-color;
 	}
-	.sidebar-menu-button:not(:only-child):before {
+	.sidebar-menu-toggle-icon {
 		color: $sm-dark-toggle-color;
 	}
 	.sidebar-menu-icon {
@@ -73,14 +73,14 @@
 		.sidebar-menu-icon {
 			color: $sm-dark-hover-icon-color;
 		}
-		&:not(:only-child):before {
+		.sidebar-menu-toggle-icon {
 			color: $sm-dark-hover-icon-color;
 		}
 	}
 	.open {
 		background: $sm-dark-open-bg;
 	}
-	.open > .sidebar-menu-button:not(:only-child):before {
+	.open > .sidebar-menu-button .sidebar-menu-toggle-icon {
 		color: $sm-dark-open-toggle-color;
 	}
 	.open > .sidebar-menu-button {
@@ -160,7 +160,7 @@
 		.sidebar-menu-icon {
 			color: $sm-dark-activebuttonbg-icon-color;
 		}
-		&:not(:only-child):before {
+		.sidebar-menu-toggle-icon {
 			color: $sm-dark-activebuttonbg-icon-color;
 		}
 	}

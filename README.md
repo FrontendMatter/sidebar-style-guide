@@ -4,7 +4,7 @@
 
 A style guide (CSS and Sass) providing a convenient base for styling common sidebar/drawer elements like menus, brand, etc. 
 
-This package complements the [drawer](https://github.com/themekit/material-design-kit/tree/master/src/drawer) component from [material-design-kit](https://github.com/themekit/material-design-kit).
+This package complements the [drawer](https://github.com/FrontendMatter/material-design-kit/tree/master/src/drawer) component from [material-design-kit](https://github.com/FrontendMatter/material-design-kit).
 
 ## Installation
 
@@ -47,7 +47,7 @@ There are two base skin variants that you get out of the box for making a sideba
   </tbody>
 </table>
 
-Note that none of the skin classes include a background color, so the following example assumes you are adding the background with the additional `.bg-primary` and `.bg-white` custom classes.
+Note that none of the skin classes include a background color, so the following example assumes you are adding the background with additional custom classes (i.e `.bg-primary` and `.bg-white` from Bootstrap).
 
 ```html
 <!-- .sidebar-light -->
@@ -155,12 +155,17 @@ You can customize sidebar menus with the following Sass variables.
     <tr>
       <td><code>$sm-spacing-x</code></td>
       <td>Defines the horizontal spacing for sidebar menus</td>
-      <td><code>$sidebar-spacing-x</code></td>
+      <td><code>0</code></td>
     </tr>
     <tr>
       <td><code>$sm-spacing-y</code></td>
       <td>Defines the vertical spacing for sidebar menus</td>
       <td><code>$sidebar-spacing-y</code></td>
+    </tr>
+    <tr>
+      <td><code>$sm-inner-spacing-x</code></td>
+      <td>Defines the horizontal spacing between button elements such as icons and badges</td>
+      <td><code>5px</code></td>
     </tr>
   </tbody>
 </table>
@@ -192,6 +197,11 @@ You can customize sidebar menus with the following Sass variables.
       <td><code>42px</code></td>
     </tr>
     <tr>
+      <td><code>$sm-button-spacing-x</code></td>
+      <td>Defines the horizontal spacing for sidebar menu buttons</td>
+      <td><code>$sidebar-spacing-x</code></td>
+    </tr>
+    <tr>
       <td><code>$sm-active-button-font-weight</code></td>
       <td>Defines the font weight for <code>.sidebar-menu-button</code> when using <code>li.sidebar-menu-item.active</code></td>
       <td><code>$sm-button-font-weight</code></td>
@@ -214,6 +224,10 @@ Add icons to sidebar menus.
     <tr>
       <td><code>.sidebar-menu-icon</code></td>
       <td>The sidebar menu icon</td>
+    </tr>
+    <tr>
+      <td><code>.sidebar-menu-icon--left</code> or <code>.sidebar-menu-icon--right</code></td>
+      <td>Add spacing between the menu icon and text</td>
     </tr>
     <tr>
       <td><code>.material-icons</code></td>
@@ -240,7 +254,7 @@ To add an icon to the sidebar menu button, add an element using the `.sidebar-me
 <ul class="sidebar-menu">
   <li class="sidebar-menu-item">
     <a class="sidebar-menu-button" href="#">
-      <i class="sidebar-menu-icon material-icons">home</i> 
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">home</i> 
       Menu button text
     </a>
   </li>
@@ -264,9 +278,9 @@ You can customize sidebar menu icons with the following Sass variables.
       <td><code>24px</code></td>
     </tr>
     <tr>
-      <td><code>$sm-icon-margin</code></td>
-      <td>Defines the margin for sidebar menu icons</td>
-      <td><code>$sm-spacing-x * 0.4</code></td>
+      <td><code>$sm-icon-spacing-x</code></td>
+      <td>Defines the horizontal spacing between the sidebar menu icons and text when using <code>.sidebar-menu-icon--left</code> or <code>.sidebar-menu-icon--right</code> modifiers</td>
+      <td><code>$sm-inner-spacing-x</code></td>
     </tr>
   </tbody>
 </table>
@@ -303,10 +317,6 @@ You can modify the style of sidebar menus and sidebar submenus by using CSS help
       <td>Applies a background color to active sidebar menu items</td>
     </tr>
     <tr>
-      <td><code>.sm-icons-right</code></td>
-      <td>Aligns the sidebar menu icons to the right</td>
-    </tr>
-    <tr>
       <td><code>.sm-icons-block</code></td>
       <td>Wrap the sidebar menu icons into a square block with background color</td>
     </tr>
@@ -333,12 +343,12 @@ You can customize sidebar utilities with the following Sass variables.
     <tr>
       <td><code>$sm-condensed-button-height</code></td>
       <td>Defines the height in <code>px</code> for sidebar menu buttons when using <code>.sm-condensed</code></td>
-      <td><code>$sm-button-height - ($sm-button-height/4)</code></td>
+      <td><code>$sm-button-height * 0.75</code></td>
     </tr>
     <tr>
       <td><code>$ssm-condensed-button-height</code></td>
       <td>Defines the height in <code>px</code> for sidebar submenu buttons when using <code>.sm-condensed</code></td>
-      <td><code>$ssm-button-height - ($ssm-button-height/4)</code></td>
+      <td><code>$ssm-button-height * 0.75</code></td>
     </tr>
   </tbody>
 </table>
@@ -430,7 +440,7 @@ You can customize sidebar utilities with the following Sass variables.
     <tr>
       <td><code>$sm-light-active-button-bg</code></td>
       <td>Defines the background color for active sidebar menu buttons when using the <code>.sidebar-light</code> skin</td>
-      <td><code>$brand-primary</code></td>
+      <td><code>$primary</code></td>
     </tr>
     <tr>
       <td><code>$sm-light-activebuttonbg-button-color</code></td>
@@ -482,19 +492,19 @@ The following example is using [Material icons](https://design.google.com/icons/
 
 ```html
 <!-- Sidebar menu style modifiers -->
-<ul class="sidebar-menu sm-active-button-bg sm-bordered sm-icons-right">
-    <li class="sidebar-menu-item">
-        <a class="sidebar-menu-button" href="#">
-            <i class="sidebar-menu-icon material-icons">home</i> 
-            Menu button
-        </a>
-    </li>
-    <li class="sidebar-menu-item active">
-        <a class="sidebar-menu-button" href="#">
-            <i class="sidebar-menu-icon material-icons">menu</i> 
-            Another button
-        </a>
-    </li>
+<ul class="sidebar-menu sm-active-button-bg sm-bordered">
+  <li class="sidebar-menu-item">
+    <a class="sidebar-menu-button" href="#">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">home</i> 
+      Menu button
+    </a>
+  </li>
+  <li class="sidebar-menu-item active">
+    <a class="sidebar-menu-button" href="#">
+      <i class="sidebar-menu-icon sidebar-menu-icon--left material-icons">menu</i> 
+      Another button
+    </a>
+  </li>
 </ul>
 ```
 
@@ -535,6 +545,7 @@ To create a basic sidebar submenu:
 - add `li` submenu items using the `.sidebar-menu-item` class
 - add `a` submenu buttons using the `.sidebar-menu-button` class
 - add the `.open` class to the parent `.sidebar-menu-item` element to display a submenu
+- add the optional `.sidebar-menu-toggle-icon` indicator element to the top level toggle button
 
 ```html
 <!-- Sidebar menu -->
@@ -542,7 +553,10 @@ To create a basic sidebar submenu:
 
   <!-- Open menu item -->
   <li class="sidebar-menu-item open">
-    <a href="#" class="sidebar-menu-button">Dashboard</a>
+    <a href="#" class="sidebar-menu-button">
+      Dashboard
+      <span class="sidebar-menu-toggle-icon ml-auto"></span>
+    </a>
 
     <!-- Submenu -->
     <ul class="sidebar-submenu">
@@ -557,7 +571,10 @@ To create a basic sidebar submenu:
 
   <!-- Menu item -->
   <li class="sidebar-menu-item">
-    <a href="#" class="sidebar-menu-button">Reports</a>
+    <a href="#" class="sidebar-menu-button">
+      Reports
+      <span class="sidebar-menu-toggle-icon ml-auto"></span>
+    </a>
 
     <!-- Submenu -->
     <ul class="sidebar-submenu">
